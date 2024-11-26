@@ -6,6 +6,30 @@ body {
     margin: 0;
     padding: 0;
   }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between images and list */
+  }
+  
+  /* General style for both images */
+  .side-img {
+    width: 150px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow */
+  }
+  
+  /* Margin for the left image */
+  .left-img {
+    margin-right: 20px;
+  }
+  
+  /* Margin for the right image */
+  .right-img {
+    margin-left: 20px;
+  }
   
   /* Header Styling */
   header {
