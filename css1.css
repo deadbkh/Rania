@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #900505;
+    color: #efeaea;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-style: italic;
+  }
+  
+  /* Message List */
+  #message-list {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #message-list li {
+    margin: 10px 0;
+  }
+  
+  #message-list a {
+    text-decoration: none;
+    color: #800000;
+    font-size: 1.2rem;
+    border: 2px solid #ff9999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #message-list a:hover {
+    background-color: #900505;
+  }
+  
+  /* Article Styling */
+  article {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+    background: #900505;
+    border: 2px solid #470202;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  article p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f7f3f3;
+  }
+  
+  /* Back Button */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #900505;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #800000;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #900505;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
