@@ -15,7 +15,7 @@ body {
   
   /* General style for both images */
   .side-img {
-    width: 150px; /* Adjust the width of the images */
+    width: 50px; /* Adjust the width of the images */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow */
