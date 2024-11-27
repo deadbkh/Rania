@@ -23,12 +23,12 @@ body {
   
   /* Margin for the left image */
   .left-img {
-    margin-right: 20px;
+    margin-right: 50px;
   }
   
   /* Margin for the right image */
   .right-img {
-    margin-left: 20px;
+    margin-left: 50px;
   }
   
   /* Header Styling */
@@ -53,6 +53,52 @@ body {
     padding: 20px;
     text-align: center;
   }
+  /* Animated Words Around the Header */
+.animated-words {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction */
+}
+
+.word {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4081;
+  animation: float 4s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* Individual Positions for Each Word */
+.word1 { top: -20px; left: 10%; animation-delay: 0s; }
+.word2 { top: 5%; left: 80%; animation-delay: 1s; }
+.word3 { top: 20%; left: 35%; animation-delay: 2s; }
+.word4 { top: 0; left: 20%; animation-delay: 3s; }
+.word5 { top: 40%; left: 10%; animation-delay: 4s; }
+.word6 { top: 10%; right: 20%; animation-delay: 5s; }
+.word7 { top: 50%; right: 10%; animation-delay: 6s; }
+.word8 { top: 5%; left: 70%; animation-delay: 7s; }
+.word9 { top: 25%; left: 50%; animation-delay: 8s; }
+.word10 { bottom: 10%; left: 60%; animation-delay: 9s; }
+
+/* Float Animation */
+@keyframes float {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-10px);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
   
   #message-list li {
     margin: 10px 0;
@@ -118,4 +164,61 @@ body {
     bottom: 0;
     width: 100%;
   }
-  
+  #container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.moving-text {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer p {
+  font-size: 1.2rem;
+  color: aliceblue;
+  animation: fadeInOut 5s infinite, moveFooter 3s infinite ease-in-out;
+}
+
+/* Fade in and out animation */
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+/* Subtle movement animation */
+@keyframes moveFooter {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+} 
