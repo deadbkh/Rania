@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffe6e6;
+    background-color: #e77878;
     color: aliceblue;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ body {
   /* Header Styling */
   header {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     background-color: #900505;
     color: #efeaea;
   }
@@ -77,6 +77,50 @@ body {
 .word2 { top: 5%; left: 80%; animation-delay: 1s; }
 .word3 { top: 20%; left: 35%; animation-delay: 2s; }
 .word4 { top: 0; left: 20%; animation-delay: 3s; }
+/* Special Section Styling */
+.special-section {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.special-section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.letter-container {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+.letter-container p {
+  font-family: "Georgia", serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #e55b50;
+}
 
 
 /* Float Animation */
@@ -197,6 +241,52 @@ footer p {
   color: aliceblue;
   animation: fadeInOut 5s infinite, moveFooter 3s infinite ease-in-out;
 }
+/* Romantic Box Styling */
+.romantic-box {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border: 2px solid #ff6f61;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  animation: glow 3s infinite alternate;
+}
+
+/* Text Styling */
+.romantic-box h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.romantic-box p {
+  font-size: 1.2em;
+  color: #fefefe;
+  font-family: "Verdana", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Interaction: Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 4px 10px rgba(255, 105, 97, 0.7);
+  }
+  to {
+    box-shadow: 0 6px 15px rgba(255, 105, 97, 1);
+  }
+}
+
+/* Interaction: Hover Effect */
+.romantic-box:hover {
+  background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
 
 /* Fade in and out animation */
 @keyframes fadeInOut {
