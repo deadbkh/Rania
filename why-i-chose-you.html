@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Letter</title>
+  <title>The Famous why</title>
   <link rel="stylesheet" href="css1.css">
 </head>
 <body>
@@ -17,9 +17,9 @@
 
         I’ve been thinking deeply about everything you’ve shared with me, about your questions and worries. I want to answer you from the bottom of my heart because you are the person I want to spend my life with, and I want you to feel safe, loved, and cherished always.
         
-        When you asked me why I chose you, the answer is simple but profound. From the very first moment we connected, I felt something I’ve never felt before—a sense of certainty, a deep feeling that you are the one for me. It’s as if my heart and soul recognized you before I even had the chance to understand it myself.
+        When you asked me why I chose you, the answer is simple but profound. From the very first moment we connected, I felt something I’ve never felt before a sense of certainty, a deep feeling that you are the one for me. It’s as if my heart and soul recognized you before I even had the chance to understand it myself.
         
-        I want to marry you because of how much I love and respect you. It’s not just about your beauty or your kindness, but everything about who you are—the way you treat me with respect and care, the way you make me smile even on the hardest days, and the way you bring warmth and light into my life.
+        I want to marry you because of how much I love and respect you. It’s not just about your beauty or your kindness, but everything about who you are the way you treat me with respect and care, the way you make me smile even on the hardest days, and the way you bring warmth and light into my life.
         
         You are a rare and special person, Rania. You respect me in ways that make me feel seen, valued, and loved. You are friendly, lovely, and genuine, and these qualities make me fall for you more every day. You have a beautiful soul, and I admire how strong you are, even after everything you’ve been through.
         
@@ -29,13 +29,13 @@
         
         Most of all, I want you to know that I want to care for you and love you, just as you will care for and love me. I believe marriage is about partnership, about being there for each other through everything life brings. I’m ready for that with you.I know I’ve told you before that marriage is a risk, especially in our generation, where so many people seem to only look out for themselves. It’s easy to feel afraid of the unknown, to wonder if the person you choose to spend your life with will truly be good for you.
 
-        But I want you to know, with all my heart, that we are different. What sets us apart is how deeply we’re willing to sacrifice for each other. We don’t just see ourselves in this relationship—we see each other. That’s what makes us unique.
+        But I want you to know, with all my heart, that we are different. What sets us apart is how deeply we’re willing to sacrifice for each other. We don’t just see ourselves in this relationship we see each other. That’s what makes us unique.
         
-        I truly believe that this selflessness, this unwavering love and respect we share, will make our marriage not only strong but beautifully successful. You don’t need to be afraid because I’m here, and together, we will build something extraordinary—a partnership rooted in love, trust, and understanding.
+        I truly believe that this selflessness, this unwavering love and respect we share, will make our marriage not only strong but beautifully successful. You don’t need to be afraid because I’m here, and together, we will build something extraordinary a partnership rooted in love, trust, and understanding.
         
         I’ve seen so many people, both men and women, who approach marriage with selfishness, as if it’s a constant battle for control or independence. It feels like they’ve forgotten what it truly means to build a life together.
 
-        It bothers me when I see the mindset that being independent means never relying on your partner. For me, marriage is not about who can stand alone better—it’s about standing together, supporting each other through everything.
+        It bothers me when I see the mindset that being independent means never relying on your partner. For me, marriage is not about who can stand alone better it’s about standing together, supporting each other through everything.
 
         I believe in a partnership where we lean on each other, where I can rely on you as much as you can rely on me. We’re not opponents in some fight; we’re a team, building something that lasts. That’s why I’m so confident in us, because I know we understand this.
 
@@ -50,13 +50,41 @@
   </main>
 
   <footer>
-    <p style="color: aliceblue;">With love, Abderrahmane ❤️</p>
+    <p>With love, Abderrahmane ❤️</p>
+    <p>Did I answer your question? (Please select Yes or No) <br> 
+       What do you think?</p>
+    
+    <!-- Form to capture feedback -->
+    <form id="feedbackForm" action="https://formspree.io/f/xovqkbqe" method="POST">
+      <button type="submit" name="response" value="Yes" style="background-color: #4CAF50;">Yes</button>
+      <button type="submit" name="response" value="No" style="background-color: #f44336;">No</button>
+      
+      <!-- Text input for her response -->
+      <textarea name="thoughts" placeholder="Please share your thoughts here..." rows="4" cols="50"></textarea>
+  
+      <!-- Hidden input to give context about the response -->
+      <input type="hidden" name="message" value="Feedback on the letter">
+    </form>
   </footer>
+  
+  <script>
+    // Falling hearts
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
 
-  <script >
+    setInterval(createHeart, 300);
+
+    // Go back function
     function goBack() {
       window.location.href = "index.html";
-    
     }
   </script>
 </body>
