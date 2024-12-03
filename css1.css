@@ -203,6 +203,39 @@ body {
     bottom: 0;
     width: 100%;
   }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .message-card {
+      width: 100%; /* Make the cards take full width */
+    }
+  
+    .side-img {
+      width: 100px; /* Smaller size for side images */
+      align-self: center;
+    }
+  
+    .romantic-box h1 {
+      font-size: 1.5rem;
+    }
+  
+    .message-bracket {
+      left: 0; /* Center the bracket */
+      margin: 0 auto;
+    }
+  
+    .message-text {
+      font-size: 16px;
+    }
+  
+    footer {
+      font-size: 14px; /* Adjust footer font size for smaller screens */
+    }
+  }
   #container {
     position: relative;
     height: 100vh;
