@@ -5,6 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Messages for Rania</title>
   <link rel="stylesheet" href="css1.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #800000;
+    }
+
+    header {
+      text-align: center;
+      background: #5b0b0b;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header h2 {
+      margin: 0;
+    }
+
+    .romantic-box {
+      text-align: center;
+      margin: 20px 3 ;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .message-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .message-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .message-card a {
+      text-decoration: none;
+      color: #e63946;
+      font-weight: bold;
+    }
+
+    .message-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #f7a8a8;
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .side-img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,43 +87,56 @@
         </p>
         <a href="why-i-chose-you.html" class="read-more-btn">Read the Full Letter</a>
       </div>
-    
+    </section>
   </header>
 
   <main>
-  
-    <div class="romantic-box">
-      <h1>Messages for Rania</h1>
-      <p>Select a message below to read it.</p>
-    </div>
-    
-    <div class="container">
-      <!-- Left Image -->
-      <img src="1.png" alt="Left Romantic Image" class="side-img left-img" width="150">
-      
-      <!-- List -->
-      <ul id="message-list">
-        <li><a href="msg1.html">First Letter</a></li>
-        <li><a href="msg2.html">Second Letter</a></li>
-        <li><a href="msg3.html">Third Letter</a></li>
-        <li><a href="msg4.html">Fourth Letter</a></li>
-        <li><a href="msg5.html">Fifth Letter</a></li>
-        <li><a href="msg6.html">Sixth Letter</a></li>
-        <li><a href="msg7.html">Seventh Letter</a></li>
-        <li><a href="msg8.html">Eighth Letter</a></li>
-        <li><a href="msg9.html">Ninth Letter</a></li>
-        <li><a href="msg10.html">tenth Letter </a></li>
-      </ul>
 
-      <!-- Right Image -->
-      <img src="2.png" alt="Right Romantic Image" class="side-img right-img" width="150">
-    </div>
+    <div class="romantic-box">
     
+      <h1 style="text-align: center;">Messages for Rania</h1>
+      <p style="text-align: center;">Select a message below to read it.</p>
+    </div>
+    <div class="container">
+      <img src="1.png" alt="Left Romantic Image" class="side-img">
+      <!-- Message Cards -->
+      <div class="message-card">
+        <a href="msg1.html">First Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg2.html">Second Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg3.html">Third Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg4.html">Fourth Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg5.html">Fifth Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg6.html">Sixth Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg7.html">Seventh Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg8.html">Eighth Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg9.html">Ninth Letter</a>
+      </div>
+      <div class="message-card">
+        <a href="msg10.html">Tenth Letter</a>
+      </div>
+      <img src="2.png" alt="Right Romantic Image" class="side-img">
+    </div>
   </main>
 
   <footer>
-    <p style="color: aliceblue;" class="animated-footer" >With love, Abderrahmane ❤️</p>
+    <p style="color: aliceblue;" class="animated-footer">With love, Abderrahmane ❤️</p>
   </footer>
-  <script src="java.js" ></script>
+  <script src="java.js"></script>
 </body>
 </html>
