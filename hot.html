@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romantic Moments</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <header>
+    <h1>Romantic Moments with Rania</h1>
+  </header>
+
+  <main>
+    <article class="romantic-piece">
+      <h2 style="text-align: center;">A Night to Remember</h2>
+      <p>
+        I imagine a night with you, Rania, bathed in soft, ambient light, where the world outside fades away, leaving only the two of us. The anticipation of being so close to you heightens every sensation, every touch.
+        I've been fantasizing about you, and I can't wait to get my hands on your incredible body. I want to start by kissing your neck, feeling your pulse quicken under my lips as I move slowly, teasingly, down to your collarbone.
+        As I kiss my way down, I'll reach your beautiful breasts, taking each nipple between my lips, sucking gently, feeling them harden with every touch of my tongue. I love how sensitive they are, and I can't wait to hear those little gasps and moans you make when I give them the attention they deserve. Sliding my hand inside your panties, I moved my finger around your pussy
+        Then, I'll continue my journey down your body, kissing every inch of your soft skin until I reach your inner thighs. I'll tease you there, feeling you tremble with anticipation before finally reaching your wet, inviting pussy. I want to explore every part of you, focusing on your clit, teasing it with my tongue and fingers, feeling you writhe beneath me in pure ecstasy.
+        I licked your lips and moved down to your clitoris, making you wetter with every taste. My other hand remained on your breasts, feeling your body respond to my touch.
+        Your body arched, and your moans grew louder as I continued to taste you. The intensity of your reactions only fueled my passion. As your orgasm built, I increased my pace, determined to give you the most intense pleasure. When you finally reached the peak, your entire body shook with ecstasy.
+        And when you're on the edge, ready to let go, I'll come back up to you, kissing you deeply, sharing the taste of your own arousal, feeling that electric connection between us that leaves us both breathless and craving more.
+        Supporting myself on my arms, I slowly penetrated you, feeling your legs wrap around me, pulling me closer. Your warmth enveloped me, driving me to thrust deeper. I moved with wild abandon, our bodies perfectly synchronized, and the room filled with the sounds of our pleasure.
+        Your body trembled beneath me as your second orgasm overtook you, your pussy tightening around me. With one final thrust, I felt you shudder beneath me, your pleasure washing over you.
+        Collapsing onto your sweat-slicked body, we lay entwined, our breaths mingling in the afterglow. As the moments passed, our passion reignited, leading us to begin again, our lovemaking driven by an insatiable desire.
+        
+      <!-- Add the rest of your content here -->
+    </article>
+    <button style="text-align: center;" onclick="goBack()">Back to Menu</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Abderrahmane Bentaleb. All rights reserved.</p>
+  </footer>
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    
+    }
+    // Set up background color transitions
+    let colors = ['#6a064ca9', '#6a064ca9	', '#6a064ca9', '#6a064ca9', '#6a064ca9'];
+    let currentIndex = 0;
+    
+    function changeBackground() {
+      document.body.style.transition = 'background 3s ease';
+      document.body.style.backgroundColor = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }
+    setInterval(changeBackground, 4000);
+  
+    // Add seductive text animations
+    const phrases = [
+      'I want to feel your heartbeat...',
+      'Your body, trembling beneath me...',
+      'Every inch of you is mine tonight...',
+      'I crave your touch, your taste...',
+      'Let me take you to the edge of ecstasy...'
+    ];
+    
+    let phraseIndex = 0;
+    const textContainer = document.createElement('div');
+    textContainer.id = 'seductive-text';
+    document.body.appendChild(textContainer);
+    
+    function updateText() {
+      textContainer.innerText = phrases[phraseIndex];
+      textContainer.style.opacity = 1;
+      setTimeout(() => {
+        textContainer.style.opacity = 0;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }, 3000);
+    }
+    setInterval(updateText, 4000);
+  
+    // Create hover interaction
+    const romanticWords = ['Desire', 'Passion', 'Ecstasy', 'Intimacy', 'Fire'];
+    romanticWords.forEach(word => {
+      const span = document.createElement('span');
+      span.innerText = word;
+      span.className = 'hover-word';
+      span.addEventListener('mouseenter', () => {
+        span.style.color = '#ff6b81';
+        span.style.transform = 'scale(1.2)';
+      });
+      span.addEventListener('mouseleave', () => {
+        span.style.color = '#fff';
+        span.style.transform = 'scale(1)';
+      });
+      textContainer.appendChild(span);
+    });
+  
+  </script>
+  
+  
+</body>
+</html>
