@@ -1,68 +1,49 @@
-// Example: Add a button to reveal hidden messages
-document.addEventListener('DOMContentLoaded', () => {
-    const button = document.createElement('button');
-    button.textContent = "Show More Messages";
-    button.style.margin = "20px auto";
-    button.style.display = "block";
-  
-    document.body.appendChild(button);
-  
-    button.addEventListener('click', () => {
-      alert('This feature will show more messages soon!');
-    });
+// Set up background color transitions
+let colors = ['#6a064ca9', '#6a064ca9', '#6a064ca9', '#6a064ca9', '#6a064ca9'];
+let currentIndex = 0;
+
+function changeBackground() {
+  document.body.style.transition = 'background 3s ease';
+  document.body.style.backgroundColor = colors[currentIndex];
+  currentIndex = (currentIndex + 1) % colors.length;
+}
+
+setInterval(changeBackground, 4000);
+
+let phraseIndex = 0;
+const textContainer = document.createElement('div');
+textContainer.id = 'seductive-text';
+document.body.appendChild(textContainer);
+
+function updateText() {
+  textContainer.innerText = phrases[phraseIndex];
+  textContainer.style.opacity = 1;
+  setTimeout(() => {
+    textContainer.style.opacity = 0;
+    phraseIndex = (phraseIndex + 1) % phrases.length;
+  }, 3000);
+}
+
+setInterval(updateText, 4000);
+
+// Create hover interaction for romantic words
+const romanticWords = ['Desire', 'Passion', 'Ecstasy', 'Intimacy', 'Fire'];
+romanticWords.forEach(word => {
+  const span = document.createElement('span');
+  span.innerText = word;
+  span.className = 'hover-word';
+  span.addEventListener('mouseenter', () => {
+    span.style.color = '#ff6b81';
+    span.style.transform = 'scale(1.2)';
   });
-  const canvas = document.getElementById("particles");
-const ctx = canvas.getContext("2d");
+  span.addEventListener('mouseleave', () => {
+    span.style.color = '#fff';
+    span.style.transform = 'scale(1)';
+  });
+  textContainer.appendChild(span);
+});
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const particlesArray = [];
-const colors = ["#ffffff", "#ffd1dc", "#ff85a2", "#ff4081"];
-
-class Particle {
-    constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 5 + 1;
-        this.speedX = Math.random() * 3 - 1.5;
-        this.speedY = Math.random() * 3 - 1.5;
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-    }
-
-    update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
-        if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
-    }
-
-    draw() {
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.closePath();
-        ctx.fill();
-    }
+// Back to Menu function
+function goBack() {
+  window.location.href = "index.html";
 }
-
-function init() {
-    for (let i = 0; i < 100; i++) {
-        particlesArray.push(new Particle());
-    }
-}
-
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particlesArray.forEach(particle => {
-        particle.update();
-        particle.draw();
-    });
-    requestAnimationFrame(animate);
-}
-
-init();
-animate();
-
-  

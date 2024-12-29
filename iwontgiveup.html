@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Girl That I Won't Give Up On</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2c3e50;
+      color: white;
+      line-height: 1.6;
+      transition: background-color 3s ease;
+    }
+    
+    header {
+      background-color: #6a064ca9;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ff6b81;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .romantic-piece {
+      text-align: justify;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-left: 4px solid #ff6b81;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #ff6b81;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff3b53;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #6a064ca9;
+      color: white;
+    }
+
+    /* Background Transition */
+    .background-transition {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: background-color 3s ease;
+    }
+
+    /* Seductive Text Animation */
+    #seductive-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: #ff6b81;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    /* Hover Interaction */
+    .hover-word {
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 5px;
+      cursor: pointer;
+      display: inline-block;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .hover-word:hover {
+      color: #ff6b81;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Girl That I Won't Give Up On</h1>
+  </header>
+
+  <main>
+    <article class="romantic-piece">
+      <h2>My Greatest Treasure, Forever Yours</h2>
+      <p>My dearest Rania,</p>
+      <p>From the very first moment our paths crossed, I knew you were different, special in a way that words can never fully capture. You are the light that brightens my days, the reason I wake up with hope, and the dream that gives my life meaning. You are not just a part of my life, you are my life.</p>
+
+      <p>Rania, you are and always will be my greatest achievement. No success, no victory, no accomplishment could ever compare to the privilege of having you by my side. If I were to conquer the world, it would mean nothing without you there to share it with. My life doesn’t hold its true purpose without your presence, your laughter, and your love.</p>
+
+      <p>Even now, we’re fighting a battle where the distance keeps us apart, where I can’t see your beautiful face every day or hold your hand when I need to. It’s hard not being able to feel your touch, to be physically near you, but I want you to know that this distance is no match for the strength of what we have. We will overcome this, just as we will face every challenge life puts in our way.</p>
+
+      <p>I want you to know that I am ready to endure any storm for you. Let the winds rage and the skies darken, I will stand strong for us. If the earth itself were to tremble beneath our feet, I would face it all to keep you safe, to hold you close, and to protect the love we share. Nothing, absolutely nothing, will make me waver in my devotion to you.</p>
+
+      <p>No matter how hard life gets, I will never give up on you. I will hold on through the darkest nights, even when hope seems far away. I will be there when things get tough, offering you my strength and my unwavering belief in us. If you stumble, I will catch you. If you lose your way, I will guide you back. I will fight for you, for your happiness, and for the life we dream of together.</p>
+
+      <p>The challenges we’re facing now are just the beginning. There’s a long road ahead of us, filled with trials we can’t yet imagine. But there’s also so much joy, love, and beauty waiting for us on the other side. Together, we will build a future so strong that nothing will ever tear it apart.</p>
+
+      <p>Every challenge, every sacrifice, every battle I face is worth it if it means seeing you happy. Your happiness, your peace, and your smile mean more to me than my own comfort or well-being. If I must give everything I have, my strength, my time, even my life, I would do so without hesitation, because your happiness is my ultimate purpose.</p>
+
+      <p>Rania, I will love you with a passion that defies the limits of this world. My heart belongs to you, and it always will. I am here, now and forever, ready to give you everything I am and everything I have.</p>
+
+      <p>You are my greatest treasure, my deepest love, and my endless inspiration. And I promise you, with every fiber of my being, I will never give up on you.</p>
+
+      <p>Forever yours, <br> Abderrahmane</p>
+    </article>
+    <button onclick="goBack()">Back to Menu</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Abderrahmane Bentaleb. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Background color transitions
+    let colors = ['#6a064ca9', '#8e44ad', '#e74c3c', '#f39c12', '#2ecc71'];
+    let currentIndex = 0;
+
+    function changeBackground() {
+      document.body.style.transition = 'background-color 3s ease';
+      document.body.style.backgroundColor = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }
+
+    setInterval(changeBackground, 4000);
+
+   
+    let phraseIndex = 0;
+    const textContainer = document.createElement('div');
+    textContainer.id = 'seductive-text';
+    document.body.appendChild(textContainer);
+
+    function updateText() {
+      textContainer.innerText = phrases[phraseIndex];
+      textContainer.style.opacity = 1;
+      setTimeout(() => {
+        textContainer.style.opacity = 0;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }, 3000);
+    }
+
+    setInterval(updateText, 4000);
+    function goBack() {
+      window.location.href = "index.html";
+    
+    }
+  </script>
+
+</body>
+</html>
