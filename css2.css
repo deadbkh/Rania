@@ -1,0 +1,342 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e77878;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between images and list */
+  }
+  
+  /* General style for both images */
+  .side-img {
+    width: 150px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow */
+  }
+  
+  /* Margin for the left image */
+  .left-img {
+    margin-right: 50px;
+  }
+  
+  /* Margin for the right image */
+  .right-img {
+    margin-left: 50px;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    padding: 50px;
+    background-color: #4e084b;
+    color: #efeaea;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-style: italic;
+  }
+  
+  /* Message List */
+  #message-list {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+  }
+  /* Animated Words Around the Header */
+.animated-words {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction */
+}
+
+.word {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff4081;
+  animation: float 4s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* Individual Positions for Each Word */
+.word1 { top: -20px; left: 10%; animation-delay: 0s; }
+.word2 { top: 5%; left: 80%; animation-delay: 1s; }
+.word3 { top: 20%; left: 35%; animation-delay: 2s; }
+.word4 { top: 0; left: 20%; animation-delay: 3s; }
+/* Special Section Styling */
+.special-section {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.special-section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.letter-container {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+.letter-container p {
+  font-family: "Georgia", serif;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background: #701810;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #613b39;
+}
+
+
+/* Float Animation */
+@keyframes float {
+  0% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  50% {
+      transform: translateY(-10px);
+      opacity: 0.8;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+  
+  #message-list li {
+    margin: 10px 0;
+  }
+  
+  #message-list a {
+    text-decoration: none;
+    color: #36022f;
+    font-size: 1.2rem;
+    border: 2px solid #6e0f0f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  #message-list a:hover {
+    background-color: #36022f;
+  }
+  
+  /* Article Styling */
+  article {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 15px;
+    background: #7b2182b6;
+    border: 2px solid #36022f;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  article p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f7f3f3;
+  }
+  
+  /* Back Button */
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #6d0458;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #800000;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4e084b;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .message-card {
+      width: 100%; /* Make the cards take full width */
+    }
+  
+    .side-img {
+      width: 100px; /* Smaller size for side images */
+      align-self: center;
+    }
+  
+    .romantic-box h1 {
+      font-size: 1.5rem;
+    }
+  
+    .message-bracket {
+      left: 0; /* Center the bracket */
+      margin: 0 auto;
+    }
+  
+    .message-text {
+      font-size: 16px;
+    }
+  
+    footer {
+      font-size: 14px; /* Adjust footer font size for smaller screens */
+    }
+  }
+  #container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.moving-text {
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+footer p {
+  font-size: 1.2rem;
+  color: aliceblue;
+  animation: fadeInOut 5s infinite, moveFooter 3s infinite ease-in-out;
+}
+/* Romantic Box Styling */
+.romantic-box {
+  background: linear-gradient(135deg, #5c0a0d, #fad0c4);
+  border: 2px solid #ff6f61;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  animation: glow 3s infinite alternate;
+}
+
+/* Text Styling */
+.romantic-box h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.romantic-box p {
+  font-size: 1.2em;
+  color: #fefefe;
+  font-family: "Verdana", sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Interaction: Glow Animation */
+@keyframes glow {
+  from {
+    box-shadow: 0 4px 10px rgba(255, 105, 97, 0.7);
+  }
+  to {
+    box-shadow: 0 6px 15px rgba(255, 105, 97, 1);
+  }
+}
+
+/* Interaction: Hover Effect */
+.romantic-box:hover {
+  background: linear-gradient(135deg, #9b361a, #ff9a9e);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Fade in and out animation */
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+/* Subtle movement animation */
+@keyframes moveFooter {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+} 
