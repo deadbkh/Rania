@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نور عيوني</title>
+  <link rel="stylesheet" href="css2.css">
+
+</head>
+<body>
+  <header>
+    <h1>نور عيوني❤️  </h1>
+  </header>
+
+  <main>
+    <article>
+      <p style="color: aliceblue;">نور عيوني😘
+
+        <br>  يا ابنتي، ويا أغلى ما أملك في هذه الدنيا، أكتب لك الآن بقلب مليء بالحب الذي لا يمكن وصفه بالكلمات. أريدك أن تعرفي أنك لست فقط حبيبتي، بل أنت روحي، ابنتي، وملجئي الذي أهرب إليه عندما تضيق علي الدنيا
+        
+        <br> أعلم أنك تحملين ألما بداخلك، وأن الأيام أحيانا تكون قاسية عليك. ولكني هنا، أقسم أنني سأحمل كل شيء عنك. حزنك، خوفك، وألمك، سأضعهم فوق أكتافي وأحتضنهم كأنهم لي. لن أدع شيئا يؤلمك طالما أنا حي
+        
+        <br> يا نور عيوني، أريدك أن تري العالم بجماله، أن تشعري بالحب والسلام فقط. حتى لو تطلب الأمر أن أحمل أنا كل الأوجاع عنك، سأفعلها وأنا ممتن لأنني أستطيع حمايتك. أنت طفلتي الصغيرة، وأنت ملهمتي، وأنا هنا دائما لأكون ذلك الملاذ الآمن الذي تلجئين إليه
+        
+        <br> أريدك أن تتذكري دائما أنني أحبك بكل ما في. أنني سأظل بجانبك، سواء كنت في قمة سعادتك أو وسط أحزانك. مهما كانت الحياة قاسية، لن تكوني وحدك أبدا
+        
+        <br> إذا شعرت بالتعب، انظري نحوي. سترين رجلا يحبك أكثر من نفسه، رجلا مستعدا ليحمل عنك كل شيء حتى تبقي مبتسمة. أنت حياتي، وأنت ابنتي، وأنت المرأة التي أريد أن أراها دائما سعيدة
+        
+        <br> يا نور عيوني، أنا هنا من أجلك. واليوم، وغدا، وإلى الأبد، ستظلين الأهم والأقرب إلى قلبي
+        
+        <br> 💋مع كل الحب الذي لا ينتهي،
+        عبدالرحمن
+        
+        
+        
+        
+</p>
+    </article>
+    <button onclick="goBack()">Back to Menu</button>
+  </main>
+
+  <footer>
+    <p style="color: aliceblue;"> Abderrahmane ❤️</p>
+  </footer>
+
+  <script >
+    function goBack() {
+      window.location.href = "index.html";
+    
+    }
+  </script>
+  <script>
+     // Function to create floating affectionate words in Arabic
+     function showLoveWords() {
+      const words = ['أنت حبي', 'أنت روحي', 'أنت نور حياتي', 'أنت ملاكي', 'أنت أجمل شيء في حياتي', 'أنا أحبك'];
+      let loveContainer = document.body;
+
+      setInterval(() => {
+        let word = document.createElement('div');
+        word.classList.add('floating-text');
+        word.textContent = words[Math.floor(Math.random() * words.length)];
+        word.style.left = `${Math.random() * 100}%`;
+        word.style.top = `${Math.random() * 100}%`;
+
+        loveContainer.appendChild(word);
+        
+        // Remove word after animation
+        setTimeout(() => {
+          loveContainer.removeChild(word);
+        }, 5000); // word stays for 5 seconds
+      }, 2000); // Show new word every 2 seconds
+    }
+
+    // Start showing love words when the page loads
+    window.onload = showLoveWords;
+    // Function to send love by displaying hearts and kisses automatically
+    function sendLove() {
+      let loveContainer = document.body;
+      setInterval(() => {
+        let heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.textContent = '💋';
+        heart.style.left = `${Math.random() * 100}%`;
+        heart.style.top = `${Math.random() * 100}%`;
+        loveContainer.appendChild(heart);
+        setTimeout(() => {
+          loveContainer.removeChild(heart);
+        }, 2000);  // Remove heart after animation
+      }, 500);  // Interval for creating a new heart every 500ms
+    }
+
+    // Start sending love when the page loads
+    window.onload = sendLove;
+  </script>
+</body>
+</html>

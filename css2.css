@@ -340,3 +340,25 @@ footer p {
       transform: translateY(-5px);
   }
 } 
+.floating-text {
+  position: absolute;
+  font-size: 1em;
+  color: rgb(110, 25, 25);
+  opacity: 0;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50px) translateX(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) translateX(100px);
+  }
+}
